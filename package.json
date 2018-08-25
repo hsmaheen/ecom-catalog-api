@@ -1,0 +1,27 @@
+{
+  "name": "ecom-catalog-service",
+  "version": "1.0.0",
+  "description": "catalog service",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-healthcheck": "^0.1.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.9",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "version-healthcheck": "^0.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www.js"
+  },
+  "author": "hsmaheen",
+  "license": "MIT"
+}
