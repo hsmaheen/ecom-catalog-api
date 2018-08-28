@@ -7,12 +7,13 @@
 var app = require('../src/server');
 var debug = require('debug')('ecom-order-api:server');
 var http = require('http');
+var index = require('../src/config/index');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(index.serverPort);
 app.set('port', port);
 
 /**

@@ -1,5 +1,6 @@
 const CatalogService = require('../services/CatalogService');
 
+
 //Cors Config
 const enableCors = (req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -15,7 +16,7 @@ const enableCors = (req, res, next) => {
 }
 
 const createProduct = (req, res) => {
-    const product = new Product({
+    const product = ({
         productId: req.body.productId,
         productName: req.body.productName,
         productCategory: req.body.productCategory,

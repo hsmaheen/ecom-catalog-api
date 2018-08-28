@@ -7,8 +7,8 @@ const router = express.Router();
 
 router.use('/up', expressHealthcheck());
 router.use(catalogController.enableCors);
-router.get('/api/products', catalogController.listAllProducts);
-router.post('/api/products/add', catalogController.createProduct);
-router.get('/api/products/:id', catalogController.getProductById);
+router.get('/products', catalogController.listAllProducts);
+router.post('/products/add', catalogController.createProduct);
+router.get('/products/:id', catalogController.getProductById);
 
 module.exports = router;
