@@ -15,6 +15,7 @@ const enableCors = (req, res, next) => {
     next();
 }
 
+//Created new Products, should be done only by admin
 const createProduct = (req, res) => {
     const product = ({
         productId: req.body.productId,
@@ -37,6 +38,8 @@ const createProduct = (req, res) => {
     });
 }
 
+
+//Get all Products from the DB
 const listAllProducts = (req, res) => {
     CatalogService.getAllProducts()
         .then(products => res.send({
